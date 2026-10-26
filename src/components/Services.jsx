@@ -1,11 +1,11 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Database, ShoppingCart, Layout, Zap, Check, ArrowRight, MessageSquare } from 'lucide-react';
 import { clientData } from '../config/clientData';
 
 export default function Services() {
   const { services, contact } = clientData;
 
-  // Mapa de ícones
   const renderIcon = (iconName) => {
     switch (iconName) {
       case 'Database': return <Database className="w-6 h-6 text-sky-400" />;
@@ -16,37 +16,48 @@ export default function Services() {
   };
 
   return (
-    <section id="servicos" className="py-20 relative">
+    <section id="servicos" className="py-20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-2xl mx-auto mb-16"
+        >
           <span className="text-xs uppercase tracking-widest font-semibold text-sky-400">
-            O Que Faço
+            Especialidades & Atuação
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
-            Serviços & Soluções Especializadas
+            Serviços & Procedimentos
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Projetos desenvolvidos sob medida para atender exatamente o que o seu negócio precisa.
+            Tratamentos e soluções focadas na sua saúde, bem-estar e autoestima.
           </p>
-        </div>
+        </motion.div>
 
-        {/* Grade de Serviços */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {services.map((service) => {
+        {/* Grade de Serviços com Animação ao Rolar */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {services.map((service, index) => {
             const specificWhatsappUrl = `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(
-              `Olá! Gostaria de um orçamento específico para o serviço de: ${service.title}.`
+              `Olá! Vi no site e gostaria de agendar / tirar dúvidas sobre: ${service.title}.`
             )}`;
 
             return (
-              <div
+              <motion.div
                 key={service.id}
-                className="group relative p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-900/90 transition-all duration-300 flex flex-col justify-between"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -6, transition: { duration: 0.2 } }}
+                className="group relative p-7 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-900/90 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 group-hover:scale-105 group-hover:border-sky-500/40 transition-all">
+                    <div className="p-3 rounded-xl bg-slate-950 border border-slate-800 group-hover:scale-105 group-hover:border-sky-500/40 transition-all">
                       {renderIcon(service.icon)}
                     </div>
                     {service.badge && (
@@ -82,11 +93,11 @@ export default function Services() {
                     className="inline-flex items-center gap-2 text-sm font-semibold text-sky-400 hover:text-sky-300 transition-colors group-hover:translate-x-1 duration-200"
                   >
                     <MessageSquare className="w-4 h-4" />
-                    <span>Solicitar Orçamento deste Serviço</span>
+                    <span>Consultar este Serviço</span>
                     <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

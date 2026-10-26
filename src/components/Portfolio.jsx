@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { ExternalLink, Layers, ArrowUpRight } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { ExternalLink, ArrowUpRight } from 'lucide-react';
 import { clientData } from '../config/clientData';
 
 export default function Portfolio() {
   const { portfolio, contact } = clientData;
   const [activeCategory, setActiveCategory] = useState('Todos');
 
-  // Categorias únicas extraídas dos itens
   const categories = ['Todos', ...new Set(portfolio.map((item) => item.category))];
 
   const filteredItems = activeCategory === 'Todos'
@@ -14,21 +14,27 @@ export default function Portfolio() {
     : portfolio.filter((item) => item.category === activeCategory);
 
   return (
-    <section id="portfolio" className="py-20 bg-slate-900/30 border-t border-slate-800/80">
+    <section id="portfolio" className="py-20 bg-slate-900/30 border-t border-slate-800/80 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Cabeçalho */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        {/* Cabeçalho com Animação */}
+        <motion.div 
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-2xl mx-auto mb-12"
+        >
           <span className="text-xs uppercase tracking-widest font-semibold text-sky-400">
-            Cases & Trabalhos
+            Estrutura & Prática
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
-            Portfólio em Destaque
+            Galeria & Casos Clínicos
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Exemplos de projetos entregues com alto padrão de qualidade e estabilidade.
+            Conheça nosso espaço e os cuidados dedicados a cada paciente.
           </p>
-        </div>
+        </motion.div>
 
         {/* Filtros de Categoria */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
@@ -47,21 +53,26 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Grade de Projetos */}
+        {/* Grade de Projetos com Animação ao Rolar */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredItems.map((item) => {
+          {filteredItems.map((item, index) => {
             const projectWhatsappUrl = `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(
-              `Olá! Vi o projeto "${item.title}" no seu portfólio e gostaria de criar algo semelhante para minha empresa.`
+              `Olá! Vi o atendimento de "${item.title}" no site e gostaria de agendar um horário.`
             )}`;
 
             return (
-              <div
+              <motion.div
                 key={item.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -6, transition: { duration: 0.2 } }}
                 className="group rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden hover:border-slate-700 hover:shadow-2xl hover:shadow-sky-500/10 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   {/* Imagem do Projeto */}
-                  <div className="relative h-48 sm:h-52 overflow-hidden bg-slate-950">
+                  <div className="relative h-52 overflow-hidden bg-slate-950">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -74,7 +85,7 @@ export default function Portfolio() {
                     </div>
                   </div>
 
-                  {/* Detalhes do Projeto */}
+                  {/* Detalhes */}
                   <div className="p-6">
                     <h3 className="text-lg font-bold text-white group-hover:text-sky-300 transition-colors">
                       {item.title}
@@ -105,11 +116,11 @@ export default function Portfolio() {
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-700/80 text-xs sm:text-sm font-semibold text-sky-400 transition-colors"
                   >
-                    <span>Quero um Projeto Assim</span>
+                    <span>Quero Informações</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </a>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
