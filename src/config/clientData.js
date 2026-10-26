@@ -15,8 +15,8 @@ export const clientData = {
     headline: "Instalações elétricas modernas, WallBox para veículos elétricos e CFTV com atendimento direto.",
     bioShort: "Eletricista autônomo com foco em qualidade técnica, segurança e acabamento impecável. Atendimento exclusivo nas principais regiões de São Paulo.",
     location: "Zona Sul, Zona Norte e Grande São Paulo",
-    avatarUrl: "/chris-avatar.jpg", // Foto real oficial com aro neon azul
-    heroFullUrl: "/chris-hero.jpg",  // Foto real oficial no painel com cinto de ferramentas
+    avatarUrl: "/chris-avatar.jpg",
+    heroFullUrl: "/chris-hero.jpg",
     
     // Métricas
     stats: [
@@ -125,6 +125,14 @@ export const clientData = {
   portfolio: [
     {
       id: 1,
+      title: "Montagem & Alinhamento de Quadro Trifásico (QDC)",
+      category: "Quadros QDC",
+      description: "Quadro elétrico montado com rigor técnico absoluto: barramentos de cobre alinhados, identificação de circuitos e cabos antichama perfeitamente penteados.",
+      image: "/quadro-depois.jpg",
+      tags: ["Quadro Geral", "Steck", "Barramento de Cobre", "NBR 5410"],
+    },
+    {
+      id: 2,
       title: "Obras Reais: WallBox, CFTV, LED & Ventiladores",
       category: "Obras Concluídas",
       description: "Casos reais de instalações executadas pelo Christhyan: WallBox veicular, câmeras CFTV, fitas LED em sanca, troca de disjuntores e ventilador de teto.",
@@ -132,7 +140,7 @@ export const clientData = {
       tags: ["WallBox", "CFTV", "Fita LED", "Disjuntores", "Ventiladores"],
     },
     {
-      id: 2,
+      id: 3,
       title: "Serviços Oficiais: Segurança, Qualidade e Confiança",
       category: "Serviços Oficiais",
       description: "Instalações profissionais de tomadas, chuveiros com segurança, iluminação em LED e troca de disjuntores com acabamento de alto padrão.",
@@ -140,30 +148,22 @@ export const clientData = {
       tags: ["Tomadas", "Chuveiros", "Luminárias", "Disjuntores"],
     },
     {
-      id: 3,
+      id: 4,
       title: "Visita Técnica & Avaliação de Infraestrutura Elétrica",
       category: "Diagnóstico & Visita",
       description: "Análise da infraestrutura elétrica do ambiente, identificação de falhas e pontos de atenção, e orientações técnicas para os próximos passos.",
       image: "/visita-tecnica.jpg",
       tags: ["Visita Técnica", "Avaliação", "Segurança", "Diagnóstico"],
-    },
-    {
-      id: 4,
-      title: "Quadro Geral de Distribuição e Infraestrutura",
-      category: "Quadros QDC",
-      description: "Christhyan Muniz em frente a painel elétrico de grande porte, demonstrando domínio técnico, organização de barramentos e cabos antichama.",
-      image: "/chris-hero.jpg",
-      tags: ["Painel Elétrico", "Barramentos", "NBR 5410", "Christhyan Muniz ⚡"],
     }
   ],
 
-  // 7. ANTES E DEPOIS (SLIDER)
+  // 7. ANTES E DEPOIS REALISTA
   beforeAfter: {
     title: "Veja a Transformação: Antes & Depois",
-    subtitle: "Arraste a linha no centro para conferir a diferença de uma instalação sem padrão e um quadro limpo e alinhado pelo Christhyan Muniz.",
-    beforeImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
-    afterImage: "/chris-hero.jpg",
-    beforeLabel: "Antes (Fiação Sem Padrão)",
+    subtitle: "Arraste a linha no centro para conferir a restauração e organização de um quadro elétrico antes da intervenção e após o trabalho concluído.",
+    beforeImage: "/quadro-antes.jpg",
+    afterImage: "/quadro-depois.jpg",
+    beforeLabel: "Antes (Quadro com Poeira e Sobrecarga)",
     afterLabel: "Depois (Padrão Christhyan Muniz⚡)"
   },
 
