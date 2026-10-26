@@ -1,141 +1,144 @@
 /**
  * ==============================================================================
- * CONFIGURAÇÃO DO CLIENTE: Dra. Marina Costa
+ * CONFIGURAÇÃO DO CLIENTE: Christhyan Muniz (BETA PRÉ-FINAL)
+ * Eletricista Residencial e Predial • Infraestrutura Elétrica
+ * Instagram: @christhyanmunizz
  * ==============================================================================
  */
 
 export const clientData = {
-  // 1. DADOS PESSOAIS / PROFISSIONAL
+  // 1. DADOS PESSOAIS / MARCA
   info: {
-    name: "Dra. Marina Costa",
-    role: "Dermatologista e Estética Avançada",
-    headline: "Cuidado individualizado para a saúde e beleza da sua pele.",
-    bioShort: "Médica dermatologista com 10 anos de atuação. Tratamentos personalizados baseados em evidências científicas e bem-estar.",
-    location: "São Paulo, SP • Atendimento Presencial e Teleconsulta",
-    avatarUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80",
+    name: "Christhyan Muniz",
+    role: "Eletricista Residencial & Predial • Criador de Conteúdo",
+    headline: "Instalações elétricas modernas, seguras e com acabamento de alto padrão.",
+    bioShort: "Especialista em montagem de quadros de distribuição, passagens de cabeamento e reformas elétricas completas. Sem gambiarras, com máxima segurança.",
+    location: "Rio de Janeiro e Região • Atendimento Residencial e Comercial",
+    avatarUrl: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80",
     
     stats: [
-      { label: "Anos de Atuação", value: "10+" },
-      { label: "Pacientes Atendidos", value: "+2.500" },
-      { label: "Procedimentos Realizados", value: "+1.800" },
-      { label: "Satisfação dos Pacientes", value: "100%" },
+      { label: "Anos de Prática", value: "+6" },
+      { label: "Quadros & Obras", value: "+280" },
+      { label: "Segurança Técnica", value: "NBR 5410" },
+      { label: "Risco de Curtos", value: "0%" },
     ]
   },
 
-  // 2. CONTATOS E AGENDAMENTO
+  // 2. CONTATOS E BOTÕES DE AÇÃO
   contact: {
-    whatsappNumber: "5511999999999",
-    whatsappDefaultMessage: "Olá Dra. Marina! Gostaria de consultar horários disponíveis para agendamento de consulta.",
-    email: "contato@dramarinacosta.com.br",
-    instagram: "https://instagram.com",
-    linkedin: "https://linkedin.com",
+    whatsappNumber: "5521999999999", // Placeholder do RJ aguardando confirmação final
+    whatsappDefaultMessage: "Olá Christhyan! Vi seu perfil e gostaria de solicitar um orçamento para um serviço elétrico no meu imóvel.",
+    email: "contato@christhyanmuniz.com.br",
+    instagram: "https://www.instagram.com/christhyanmunizz",
+    linkedin: "",
+    github: "",
   },
 
-  // 3. SOBRE A PROFISSIONAL
+  // 3. SEÇÃO "QUEM SOU EU"
   about: {
-    title: "Medicina Dermatológica com Cuidado e Precisão",
-    subtitle: "Atenção humanizada e tratamentos seguros para cada momento da sua vida.",
+    title: "Segurança, Rigor Técnico e Acabamento Impecável",
+    subtitle: "A eletricidade da sua casa ou empresa tratada com seriedade e sem improvisos.",
     paragraphs: [
-      "Médica dermatologista com 10 anos de atuação. Ajudo cada paciente a cuidar da saúde da pele com atenção individualizada e tratamentos baseados em evidências.",
-      "Acredito que a estética deve caminhar de mãos dadas com a saúde integral, valorizando a sua beleza natural através de procedimentos seguros, modernos e com resultados elegantes."
+      "Sou profissional da área de elétrica residencial e predial, compartilhando diariamente nas redes sociais os bastidores reais das obras, reformas e manutenções elétricas.",
+      "Meu compromisso é eliminar de vez riscos de curtos-circuitos, choques e incêndios por sobrecarga, entregando quadros perfeitamente alinhados, cabos dimensionados segundo as normas e um acabamento limpo que valoriza o seu patrimônio."
     ],
     diferenciais: [
-      { title: "Avaliação Personalizada", desc: "Plano de tratamento sob medida para as características únicas da sua pele." },
-      { title: "Baseado em Evidências", desc: "Tecnologias e protocolos médicos comprovados cientificamente." },
-      { title: "Ambiente Exclusivo", desc: "Clínica estruturada para o seu conforto, pontualidade e discrição." },
-      { title: "Acompanhamento Contínuo", desc: "Suporte e orientações detalhadas antes e depois de cada procedimento." }
+      { title: "Normas NBR 5410", desc: "Dimensionamento correto de cabos e disjuntores para evitar sobreaquecimento." },
+      { title: "Quadros Organizados", desc: "Identificação completa de cada circuito para sua total facilidade e segurança." },
+      { title: "Proteção com DR e DPS", desc: "Proteja sua família contra choques e seus aparelhos contra queimas por raios." },
+      { title: "Transparência Total", desc: "Acompanhe todo o passo a passo do serviço com explicações claras e sem termos difíceis." }
     ]
   },
 
-  // 4. SERVIÇOS & PROCEDIMENTOS
+  // 4. SERVIÇOS OFERECIDOS
   services: [
     {
-      id: "consulta",
-      title: "Consulta Dermatológica",
-      description: "Avaliação minuciosa da pele, cabelos e unhas, diagnóstico clínico e prescrição de cuidados domiciliares.",
-      icon: "Database",
-      badge: "Fundamental",
-      features: ["Mapeamento de queixas", "Diagnóstico preventivo", "Plano de rotina de skincare"]
-    },
-    {
-      id: "acne",
-      title: "Tratamento de Acne & Manchas",
-      description: "Abordagem completa para controle de acne ativa, clareamento de manchas e cicatrizes.",
-      icon: "Layout",
-      badge: "Muito Procurado",
-      features: ["Controle de oleosidade", "Prevenção de cicatrizes", "Protocolos combinados"]
-    },
-    {
-      id: "botox",
-      title: "Toxina Botulínica",
-      description: "Prevenção e suavização de linhas de expressão dinâmicas com aspecto natural e descansado.",
+      id: "qdc",
+      title: "Montagem & Reforma de Quadros (QDC)",
+      description: "Substituição de quadros antigos, instalação de barramentos tipo pente, disjuntores modernos, DR e DPS.",
       icon: "Zap",
-      badge: "Estética Avançada",
-      features: ["Terço superior da face", "Sorriso gengival e bruxismo", "Resultado natural"]
+      badge: "Mais Solicitado",
+      features: ["Proteção contra choque elétrico (DR)", "Proteção contra raios (DPS)", "Identificação visual de circuitos"]
     },
     {
-      id: "colageno",
-      title: "Bioestimuladores de Colágeno",
-      description: "Tratamento para recuperar a firmeza e estimular a produção natural de colágeno da pele.",
-      icon: "ShoppingCart",
-      badge: "Rejuvenescimento",
-      features: ["Efeito lifting gradual", "Melhora da textura e viço", "Resultados de longa duração"]
+      id: "infra",
+      title: "Passagem de Cabos & Infraestrutura",
+      description: "Troca de fiação antiga ressecada, passagem de novos circuitos por eletrodutos e canaletas industriais.",
+      icon: "Database",
+      badge: "Segurança",
+      features: ["Fiação antichama certificada", "Eliminação de sobrecargas", "Distribuição equilibrada de fases"]
     },
     {
-      id: "peelings",
-      title: "Peelings Químicos",
-      description: "Renovação celular profunda para uniformização do tom da pele, brilho e textura refinada.",
+      id: "instalacoes",
+      title: "Instalações Residenciais e Prediais",
+      description: "Circuitos dedicados para chuveiros, ar-condicionado, tomadas de 20A, cooktops e fornos elétricos.",
       icon: "Layout",
-      badge: "Renovação",
-      features: ["Clareamento de manchas", "Estímulo à renovação", "Recuperação rápida"]
+      badge: "Alto Padrão",
+      features: ["Tomadas e interruptores modernos", "Alimentação segura para aparelhos pesados", "Sem quedas de energia"]
+    },
+    {
+      id: "iluminacao",
+      title: "Iluminação Técnica & Perfis de LED",
+      description: "Instalação de fitas LED, trilhos eletrificados, sancas de gesso, refletores e automação inteligente.",
+      icon: "ShoppingCart",
+      badge: "Design & Estética",
+      features: ["Iluminação suave e moderna", "Integração com interruptores smart", "Economia de energia com LED"]
+    },
+    {
+      id: "manutencao",
+      title: "Correção de Curto-Circuito & Emergências",
+      description: "Localização rápida de falhas, disjuntores que desarmam sem motivo, cheiro de queimado e quedas de tensão.",
+      icon: "Zap",
+      badge: "Plantão",
+      features: ["Diagnóstico preciso com multímetro", "Reparo imediato sem quebra desnecessária", "Laudo da instalação"]
     }
   ],
 
-  // 5. PORTFÓLIO / ESTRUTURA CLÍNICA
+  // 5. PORTFÓLIO / TRABALHOS (IMAGENS HD DE ELÉTRICA REAL)
   portfolio: [
     {
       id: 1,
-      title: "Atendimento Humanizado",
-      category: "Clínica",
-      description: "Atendimento em clínica de cuidados com a pele com conforto, atenção aos detalhes e escuta atenta.",
-      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
-      tags: ["Consulta", "Dermatologia", "Prevenção"],
+      title: "Montagem e Alinhamento de Quadro Trifásico (QDC)",
+      category: "Quadros Elétricos",
+      description: "Quadro com barramento isolado, proteção total contra descargas atmosféricas e identificação circuito a circuito.",
+      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
+      tags: ["QDC", "DPS", "DR", "Pente", "NBR 5410"],
       liveUrl: "#",
     },
     {
       id: 2,
-      title: "Protocolos e Dermocosméticos",
-      category: "Tratamentos",
-      description: "Produtos de alta performance e fórmulas selecionadas para os cuidados diários com a sua pele.",
-      image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80",
-      tags: ["Skincare", "Alta Eficácia", "Cuidados Diários"],
+      title: "Passagem de Cabos e Infraestrutura Aparente",
+      category: "Infraestrutura",
+      description: "Cabeamento técnico passado em eletrodutos com acabamento industrial limpo e seguro.",
+      image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+      tags: ["Cabeamento", "Infraestrutura", "Fiação Nova"],
       liveUrl: "#",
     },
     {
       id: 3,
-      title: "Ambiente Clínico Moderno",
-      category: "Estrutura",
-      description: "Espaço projetado segundo as mais rigorosas normas de biossegurança e acolhimento ao paciente.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
-      tags: ["Biossegurança", "Conforto", "Tecnologia Médica"],
+      title: "Instalação Elétrica Residencial Completa",
+      category: "Residencial",
+      description: "Reforma total da elétrica de apartamento, adequando pontos de tomada e iluminação moderna.",
+      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+      tags: ["Reforma Elétrica", "Tomadas", "Ar-Condicionado"],
       liveUrl: "#",
     }
   ],
 
-  // 6. DEPOIMENTOS DE PACIENTES
+  // 6. DEPOIMENTOS DE CLIENTES
   testimonials: [
     {
       id: 1,
-      name: "Paciente",
-      role: "Tratamento Facial",
-      comment: "Fui muito bem atendida. A doutora explicou cada etapa do tratamento com cuidado e carinho. O resultado superou minhas expectativas!",
+      name: "Rodrigo Almeida",
+      role: "Reforma Residencial • Rio de Janeiro",
+      comment: "O Christhyan resolveu um problema de disjuntor desarmando que três profissionais anteriores não acharam. O quadro elétrico ficou uma verdadeira obra de arte!",
       rating: 5,
     },
     {
       id: 2,
-      name: "Paciente",
-      role: "Consulta Preventiva",
-      comment: "A consulta foi atenciosa e o plano de cuidados foi explicado de forma clara. Nunca tive uma profissional tão dedicada.",
+      name: "Márcio Ferreira",
+      role: "Comércio • Niterói / RJ",
+      comment: "Excelente profissional. Muito pontual, limpo, explicou cada etapa do serviço e entregou no prazo prometido. Recomendo de olhos fechados!",
       rating: 5,
     }
   ],
@@ -143,16 +146,20 @@ export const clientData = {
   // 7. PERGUNTAS FREQUENTES (FAQ)
   faq: [
     {
-      question: "Como agendo uma consulta?",
-      answer: "Entre em contato pelo WhatsApp para consultar horários disponíveis e tirar dúvidas sobre a primeira consulta."
+      question: "Você atende casos de emergência e curto-circuito?",
+      answer: "Sim! Casos com disjuntor desarmando, cheiro de queimado ou falta de energia parcial em cômodos são atendidos com prioridade para garantir a segurança do seu imóvel."
     },
     {
-      question: "Preciso de avaliação antes do procedimento?",
-      answer: "Sim. A indicação de qualquer tratamento ou procedimento estético é feita rigorosamente após uma avaliação médica individual."
+      question: "Como funciona a solicitação de orçamento?",
+      answer: "Basta clicar em qualquer botão do WhatsApp no site e nos mandar fotos ou um vídeo do quadro ou do que você precisa. Conseguimos passar uma prévia e agendar a visita técnica."
     },
     {
-      question: "Quais formas de pagamento são aceitas?",
-      answer: "Aceitamos Pix, cartões de crédito e débito, além de opções de parcelamento. Consulte as condições no momento do agendamento."
+      question: "O serviço segue as normas brasileiras de segurança?",
+      answer: "Rigorosamente sim. Todos os dimensionamentos de cabos, disjuntores e dispositivos de segurança seguem à risca os parâmetros da norma NBR 5410 da ABNT."
+    },
+    {
+      question: "Quais regiões você atende?",
+      answer: "Atendemos o Rio de Janeiro e municípios da região metropolitana para serviços residenciais, prediais e comerciais."
     }
   ]
 };

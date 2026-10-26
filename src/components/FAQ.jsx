@@ -23,14 +23,14 @@ export default function FAQ() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <span className="text-xs uppercase tracking-widest font-semibold text-sky-400">
+          <span className="text-xs uppercase tracking-widest font-bold text-amber-400">
             Dúvidas Frequentes
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
             Perguntas & Respostas
           </h2>
           <p className="mt-3 text-slate-400 text-sm sm:text-base">
-            Tudo o que você precisa saber sobre o atendimento e agendamento.
+            Tire suas principais dúvidas sobre orçamentos, segurança e atendimento.
           </p>
         </motion.div>
 
@@ -49,12 +49,12 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggle(idx)}
-                  className="w-full py-5 px-6 flex items-center justify-between text-left text-white font-semibold text-base sm:text-lg hover:text-sky-300 transition-colors focus:outline-none"
+                  className="w-full py-5 px-6 flex items-center justify-between text-left text-white font-semibold text-base sm:text-lg hover:text-amber-300 transition-colors focus:outline-none"
                 >
                   <span className="pr-4">{item.question}</span>
                   <ChevronDown
                     className={`w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 text-sky-400' : ''
+                      isOpen ? 'rotate-180 text-amber-400' : ''
                     }`}
                   />
                 </button>

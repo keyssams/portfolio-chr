@@ -18,18 +18,18 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-xs uppercase tracking-widest font-semibold text-sky-400">
+          <span className="text-xs uppercase tracking-widest font-bold text-amber-400">
             Prova Social
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
-            O Que Dizem Nossos Pacientes
+            O Que Dizem Nossos Clientes
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Experiências reais de quem confiou na nossa dedicação e cuidado.
+            Avaliações de quem confiou nas nossas instalações e no nosso acabamento.
           </p>
         </motion.div>
 
-        {/* Grade de Depoimentos com Animação ao Rolar */}
+        {/* Grade de Depoimentos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((item, index) => (
             <motion.div
@@ -54,7 +54,7 @@ export default function Testimonials() {
               </div>
 
               <div className="mt-6 pt-5 border-t border-slate-800/80 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-sky-400 text-sm">
+                <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-amber-400 text-sm">
                   {item.name.charAt(0)}
                 </div>
                 <div>
