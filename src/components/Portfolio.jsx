@@ -14,7 +14,7 @@ export default function Portfolio() {
     : portfolio.filter((item) => item.category === activeCategory);
 
   return (
-    <section id="portfolio" className="py-20 bg-slate-900/30 border-t border-slate-800/80 overflow-hidden">
+    <section id="portfolio" className="py-20 bg-sky-50/30 border-t border-sky-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
@@ -25,13 +25,13 @@ export default function Portfolio() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-12"
         >
-          <span className="text-xs uppercase tracking-widest font-bold text-sky-300">
+          <span className="text-xs uppercase tracking-widest font-extrabold text-sky-600">
             Cases & Obras Realizadas
           </span>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
+          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900">
             Resultados de Serviços Prestados
           </h2>
-          <p className="mt-4 text-slate-300 text-base sm:text-lg">
+          <p className="mt-4 text-slate-600 text-base sm:text-lg">
             Veja na prática a dedicação, qualidade técnica e acabamento nos trabalhos realizados.
           </p>
         </motion.div>
@@ -42,10 +42,10 @@ export default function Portfolio() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-sm ${
                 activeCategory === cat
-                  ? 'bg-sky-400 text-slate-950 shadow-md shadow-sky-400/20'
-                  : 'bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
+                  ? 'bg-sky-400 text-slate-950 shadow-sky-300/40'
+                  : 'bg-white text-slate-600 hover:text-slate-900 hover:bg-sky-50 border border-sky-100'
               }`}
             >
               {cat}
@@ -53,7 +53,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Grade de Projetos */}
+        {/* Grade de Projetos em Branco com Sombra */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredItems.map((item, index) => {
             const projectWhatsappUrl = `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(
@@ -68,27 +68,27 @@ export default function Portfolio() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -6, transition: { duration: 0.2 } }}
-                className="group rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden hover:border-sky-400/50 hover:shadow-2xl hover:shadow-sky-500/10 transition-all duration-300 flex flex-col justify-between"
+                className="group rounded-2xl bg-white border border-sky-100 overflow-hidden hover:border-sky-300 hover:shadow-xl transition-all duration-300 flex flex-col justify-between shadow-md"
               >
                 <div>
-                  <div className="relative h-48 overflow-hidden bg-slate-950">
+                  <div className="relative h-48 overflow-hidden bg-slate-100">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-3 right-3">
-                      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-slate-950/85 backdrop-blur-md text-sky-300 border border-sky-400/30">
+                      <span className="px-3 py-1 text-xs font-bold rounded-full bg-white/95 backdrop-blur-md text-sky-800 border border-sky-200 shadow-sm">
                         {item.category}
                       </span>
                     </div>
                   </div>
 
                   <div className="p-5">
-                    <h3 className="text-base font-bold text-white group-hover:text-sky-200 transition-colors">
+                    <h3 className="text-base font-bold text-slate-900 group-hover:text-sky-600 transition-colors">
                       {item.title}
                     </h3>
-                    <p className="mt-2 text-xs text-slate-300 line-clamp-3 leading-relaxed">
+                    <p className="mt-2 text-xs text-slate-600 line-clamp-3 leading-relaxed">
                       {item.description}
                     </p>
 
@@ -96,7 +96,7 @@ export default function Portfolio() {
                       {item.tags.map((tag, tIdx) => (
                         <span
                           key={tIdx}
-                          className="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-950 text-slate-300 border border-slate-800"
+                          className="px-2 py-0.5 rounded text-[10px] font-bold bg-sky-50 text-sky-800 border border-sky-100"
                         >
                           {tag}
                         </span>
@@ -110,7 +110,7 @@ export default function Portfolio() {
                     href={projectWhatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-700/80 text-xs font-bold text-sky-300 hover:text-white transition-colors"
+                    className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-sky-50 hover:bg-sky-100 border border-sky-200 text-xs font-bold text-sky-700 transition-colors"
                   >
                     <span>Quero um Serviço Assim</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />

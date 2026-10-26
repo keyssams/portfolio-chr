@@ -26,7 +26,7 @@ export default function BeforeAfterSlider() {
   };
 
   return (
-    <section id="antes-depois" className="py-20 bg-slate-900/50 border-t border-b border-sky-900/40 overflow-hidden">
+    <section id="antes-depois" className="py-20 bg-white border-t border-b border-sky-100 overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
@@ -37,20 +37,20 @@ export default function BeforeAfterSlider() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-500/10 border border-sky-400/30 text-xs font-bold text-sky-300 mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-sky-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-50 border border-sky-200 text-xs font-bold text-sky-700 mb-3 shadow-sm">
+            <Sparkles className="w-3.5 h-3.5 text-sky-500" />
             <span>Padrão de Acabamento & Segurança</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">
             {beforeAfter.title}
           </h2>
-          <p className="mt-3 text-slate-300 text-sm sm:text-base">
+          <p className="mt-3 text-slate-600 text-sm sm:text-base">
             {beforeAfter.subtitle}
           </p>
         </motion.div>
 
         {/* Componente Interativo com Barra de Arrastar */}
-        <div className="relative max-w-3xl mx-auto select-none rounded-2xl overflow-hidden border-2 border-sky-500/30 shadow-2xl shadow-sky-500/10">
+        <div className="relative max-w-3xl mx-auto select-none rounded-2xl overflow-hidden border-2 border-sky-200 shadow-2xl bg-white">
           <div
             className="relative h-80 sm:h-96 md:h-[450px] w-full cursor-ew-resize"
             onMouseDown={() => setIsDragging(true)}
@@ -65,7 +65,7 @@ export default function BeforeAfterSlider() {
               alt={beforeAfter.afterLabel}
               className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             />
-            <div className="absolute top-4 right-4 bg-slate-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-sky-400/40 text-xs font-bold text-sky-300">
+            <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-sky-300 text-xs font-extrabold text-sky-800 shadow-md">
               {beforeAfter.afterLabel}
             </div>
 
@@ -80,24 +80,24 @@ export default function BeforeAfterSlider() {
                 className="absolute inset-0 w-full h-full object-cover max-w-none"
                 style={{ width: '100%', minWidth: '100%' }}
               />
-              <div className="absolute top-4 left-4 bg-slate-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-slate-700 text-xs font-bold text-slate-300">
+              <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-slate-300 text-xs font-extrabold text-slate-800 shadow-md">
                 {beforeAfter.beforeLabel}
               </div>
             </div>
 
-            {/* Linha Divisória e Alça de Arraste */}
+            {/* Linha Divisória e Alça de Arraste em Azul Bebê */}
             <div
-              className="absolute top-0 bottom-0 w-1 bg-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.8)] pointer-events-none"
+              className="absolute top-0 bottom-0 w-1.5 bg-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.8)] pointer-events-none"
               style={{ left: `${sliderPosition}%` }}
             >
-              <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-white text-slate-950 flex items-center justify-center font-black text-xs shadow-xl border-2 border-sky-400">
+              <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-white text-sky-600 flex items-center justify-center font-black text-sm shadow-xl border-2 border-sky-400">
                 ↔
               </div>
             </div>
           </div>
 
-          <div className="bg-slate-950 px-4 py-3 text-center text-xs text-slate-400 border-t border-slate-800">
-            👆 <span className="text-sky-300 font-semibold">Arraste para os lados</span> para comparar a transformação
+          <div className="bg-sky-50 px-4 py-3 text-center text-xs text-slate-700 border-t border-sky-100 font-medium">
+            👆 <span className="text-sky-700 font-bold">Arraste para os lados</span> para comparar a transformação
           </div>
         </div>
 

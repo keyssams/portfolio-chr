@@ -12,7 +12,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-20 bg-slate-900/40 border-t border-slate-800/80 overflow-hidden">
+    <section id="faq" className="py-20 bg-white border-t border-sky-100 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
@@ -23,18 +23,18 @@ export default function FAQ() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <span className="text-xs uppercase tracking-widest font-bold text-sky-300">
+          <span className="text-xs uppercase tracking-widest font-extrabold text-sky-600">
             Dúvidas Frequentes
           </span>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
+          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900">
             Perguntas & Respostas
           </h2>
-          <p className="mt-3 text-slate-300 text-sm sm:text-base">
+          <p className="mt-3 text-slate-600 text-sm sm:text-base">
             Tire suas principais dúvidas sobre orçamentos, WallBox, CFTV e regiões de atendimento.
           </p>
         </motion.div>
 
-        {/* Lista Sanfona */}
+        {/* Lista Sanfona em Branco com Borda Azul */}
         <div className="space-y-4">
           {faq.map((item, idx) => {
             const isOpen = openIndex === idx;
@@ -45,16 +45,18 @@ export default function FAQ() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
-                className="rounded-xl bg-slate-900/80 border border-slate-800 overflow-hidden transition-all duration-200"
+                className={`rounded-xl bg-white border transition-all duration-200 shadow-sm ${
+                  isOpen ? 'border-sky-400 shadow-md' : 'border-sky-100 hover:border-sky-300'
+                }`}
               >
                 <button
                   onClick={() => toggle(idx)}
-                  className="w-full py-5 px-6 flex items-center justify-between text-left text-white font-semibold text-base sm:text-lg hover:text-sky-300 transition-colors focus:outline-none"
+                  className="w-full py-5 px-6 flex items-center justify-between text-left text-slate-900 font-bold text-base sm:text-lg hover:text-sky-600 transition-colors focus:outline-none"
                 >
                   <span className="pr-4">{item.question}</span>
                   <ChevronDown
                     className={`w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 text-sky-300' : ''
+                      isOpen ? 'rotate-180 text-sky-600' : ''
                     }`}
                   />
                 </button>
@@ -66,7 +68,7 @@ export default function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.25 }}
                     >
-                      <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-slate-300 leading-relaxed border-t border-slate-800/50">
+                      <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-sky-50 font-normal">
                         {item.answer}
                       </div>
                     </motion.div>
