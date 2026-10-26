@@ -18,14 +18,14 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-xs uppercase tracking-widest font-bold text-amber-400">
+          <span className="text-xs uppercase tracking-widest font-bold text-sky-300">
             Prova Social
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
             O Que Dizem Nossos Clientes
           </h2>
-          <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Avaliações de quem confiou nas nossas instalações e no nosso acabamento.
+          <p className="mt-4 text-slate-300 text-base sm:text-lg">
+            Avaliações de quem confiou nas nossas instalações e no nosso atendimento direto.
           </p>
         </motion.div>
 
@@ -39,7 +39,7 @@ export default function Testimonials() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
               whileHover={{ y: -4 }}
-              className="relative p-7 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-colors"
+              className="relative p-7 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-sky-400/40 transition-colors shadow-lg"
             >
               <div>
                 <div className="flex items-center gap-1 mb-4">
@@ -48,18 +48,18 @@ export default function Testimonials() {
                   ))}
                 </div>
 
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed italic">
+                <p className="text-slate-200 text-sm sm:text-base leading-relaxed italic">
                   "{item.comment}"
                 </p>
               </div>
 
               <div className="mt-6 pt-5 border-t border-slate-800/80 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-amber-400 text-sm">
+                <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-sky-300 text-sm">
                   {item.name.charAt(0)}
                 </div>
                 <div>
                   <h4 className="font-semibold text-white text-sm">{item.name}</h4>
-                  <p className="text-xs text-slate-400">{item.role}</p>
+                  <p className="text-xs text-sky-300">{item.role}</p>
                 </div>
               </div>
             </motion.div>

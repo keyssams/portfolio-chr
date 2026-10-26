@@ -1,165 +1,206 @@
 /**
  * ==============================================================================
- * CONFIGURAÇÃO DO CLIENTE: Christhyan Muniz (BETA PRÉ-FINAL)
- * Eletricista Residencial e Predial • Infraestrutura Elétrica
- * Instagram: @christhyanmunizz
+ * CONFIGURAÇÃO OFICIAL DEFINITIVA: Christhyan Muniz ⚡
+ * "O Eletricista Autônomo"
+ * WhatsApp: (11) 94927-7334 | Instagram: @christhyanmunizz
  * ==============================================================================
  */
 
 export const clientData = {
-  // 1. DADOS PESSOAIS / MARCA
+  // 1. DADOS PESSOAIS & IDENTIDADE
   info: {
-    name: "Christhyan Muniz",
-    role: "Eletricista Residencial & Predial • Criador de Conteúdo",
-    headline: "Instalações elétricas modernas, seguras e com acabamento de alto padrão.",
-    bioShort: "Especialista em montagem de quadros de distribuição, passagens de cabeamento e reformas elétricas completas. Sem gambiarras, com máxima segurança.",
-    location: "Rio de Janeiro e Região • Atendimento Residencial e Comercial",
+    name: "Christhyan Muniz ⚡",
+    role: "O Eletricista Autônomo • CFTV || WallBox || Instalações || Manutenções",
+    slogan: "Christhyan Muniz ⚡ O Eletricista Autônomo",
+    headline: "Instalações elétricas modernas, WallBox para veículos elétricos e CFTV com atendimento direto.",
+    bioShort: "Eletricista autônomo com foco em qualidade técnica, segurança e acabamento impecável. Atendimento exclusivo nas principais regiões de São Paulo.",
+    location: "Zona Sul, Zona Norte e Grande São Paulo",
     avatarUrl: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80",
     
+    // Métricas
     stats: [
-      { label: "Anos de Prática", value: "+6" },
-      { label: "Quadros & Obras", value: "+280" },
-      { label: "Segurança Técnica", value: "NBR 5410" },
-      { label: "Risco de Curtos", value: "0%" },
+      { label: "Dedicação e Prática", value: "100%" },
+      { label: "Atendimento Direto", value: "Sem Intermediários" },
+      { label: "WallBox & CFTV", value: "Especialista" },
+      { label: "Regiões Atendidas", value: "Grande SP" },
     ]
   },
 
-  // 2. CONTATOS E BOTÕES DE AÇÃO
+  // 2. CONTATOS OFICIAIS
   contact: {
-    whatsappNumber: "5521999999999", // Placeholder do RJ aguardando confirmação final
-    whatsappDefaultMessage: "Olá Christhyan! Vi seu perfil e gostaria de solicitar um orçamento para um serviço elétrico no meu imóvel.",
-    email: "contato@christhyanmuniz.com.br",
+    whatsappNumber: "5511949277334",
+    whatsappDisplay: "(11) 94927-7334",
+    whatsappDefaultMessage: "Olá Christhyan! Vi seu site oficial e gostaria de solicitar um orçamento para meu imóvel.",
+    email: "christhyanmunuiz@gmail.com",
     instagram: "https://www.instagram.com/christhyanmunizz",
-    linkedin: "",
-    github: "",
+    instagramHandle: "@christhyanmunizz",
   },
 
-  // 3. SEÇÃO "QUEM SOU EU"
+  // 3. REGIÕES DE ATENDIMENTO (EM DESTAQUE)
+  regions: [
+    "Moema",
+    "Vila Olímpia",
+    "Morumbi",
+    "Vila Mariana",
+    "Perdizes",
+    "Barra Funda",
+    "Vila Clementino",
+    "Faria Lima",
+    "Ibirapuera",
+    "Vila Sônia",
+    "Zona Sul de SP",
+    "Zona Norte de SP"
+  ],
+
+  // 4. QUEM SOU EU
   about: {
-    title: "Segurança, Rigor Técnico e Acabamento Impecável",
-    subtitle: "A eletricidade da sua casa ou empresa tratada com seriedade e sem improvisos.",
+    title: "Christhyan Muniz ⚡ O Eletricista Autônomo",
+    subtitle: "Atendimento transparente, pontualidade e execução técnica de ponta a ponta.",
     paragraphs: [
-      "Sou profissional da área de elétrica residencial e predial, compartilhando diariamente nas redes sociais os bastidores reais das obras, reformas e manutenções elétricas.",
-      "Meu compromisso é eliminar de vez riscos de curtos-circuitos, choques e incêndios por sobrecarga, entregando quadros perfeitamente alinhados, cabos dimensionados segundo as normas e um acabamento limpo que valoriza o seu patrimônio."
+      "Sou Christhyan Muniz, o eletricista autônomo. Trabalho com foco total em entregar instalações seguras, organizadas e modernas, sem intermediários: você fala e negocia diretamente com o profissional que vai executar o serviço no seu imóvel.",
+      "Especialista em instalações residenciais e comerciais, carregadores veiculares WallBox para carros elétricos, sistemas de câmeras CFTV, quadros de disjuntores e luminotécnica com fitas de LED e lustres. Meu compromisso é garantir a tranquilidade e a segurança elétrica da sua família ou da sua empresa."
     ],
     diferenciais: [
-      { title: "Normas NBR 5410", desc: "Dimensionamento correto de cabos e disjuntores para evitar sobreaquecimento." },
-      { title: "Quadros Organizados", desc: "Identificação completa de cada circuito para sua total facilidade e segurança." },
-      { title: "Proteção com DR e DPS", desc: "Proteja sua família contra choques e seus aparelhos contra queimas por raios." },
-      { title: "Transparência Total", desc: "Acompanhe todo o passo a passo do serviço com explicações claras e sem termos difíceis." }
+      { title: "Atendimento Direto e Rápido", desc: "Sem enrolação: fale diretamente comigo no WhatsApp para agendar visita e tirar dúvidas." },
+      { title: "Especialista em WallBox & CFTV", desc: "Instalação técnica de carregadores veiculares e sistemas de câmeras com total segurança." },
+      { title: "Luminotécnica & Fitas LED", desc: "Instalação de perfis de LED, plafons, lustres modernos e ventiladores de teto." },
+      { title: "Sem Gambiarras", desc: "Cabos bem dimensionados, barramentos protegidos e acabamento limpo em cada detalhe." }
     ]
   },
 
-  // 4. SERVIÇOS OFERECIDOS
+  // 5. SERVIÇOS OFERECIDOS (LISTA COMPLETA OFICIAL)
   services: [
     {
-      id: "qdc",
-      title: "Montagem & Reforma de Quadros (QDC)",
-      description: "Substituição de quadros antigos, instalação de barramentos tipo pente, disjuntores modernos, DR e DPS.",
+      id: "wallbox",
+      title: "Instalação de WallBox (Carregador Veicular)",
+      description: "Instalação completa de estações de recarga para carros elétricos e híbridos com circuito dedicado e proteção antichoque.",
       icon: "Zap",
-      badge: "Mais Solicitado",
-      features: ["Proteção contra choque elétrico (DR)", "Proteção contra raios (DPS)", "Identificação visual de circuitos"]
+      badge: "Especialidade",
+      features: ["Circuito exclusivo e dimensionado", "Disjuntor e proteção DR dedicada", "Conexão segura para sua garagem"]
     },
     {
-      id: "infra",
-      title: "Passagem de Cabos & Infraestrutura",
-      description: "Troca de fiação antiga ressecada, passagem de novos circuitos por eletrodutos e canaletas industriais.",
-      icon: "Database",
+      id: "cftv",
+      title: "CFTV & Câmeras de Segurança",
+      description: "Planejamento e instalação de sistemas de câmeras CFTV para monitoramento residencial e comercial.",
+      icon: "ShieldAlert",
       badge: "Segurança",
-      features: ["Fiação antichama certificada", "Eliminação de sobrecargas", "Distribuição equilibrada de fases"]
+      features: ["Passagem de cabeamento estruturado", "Posicionamento estratégico", "Acesso e configuração"]
     },
     {
-      id: "instalacoes",
-      title: "Instalações Residenciais e Prediais",
-      description: "Circuitos dedicados para chuveiros, ar-condicionado, tomadas de 20A, cooktops e fornos elétricos.",
-      icon: "Layout",
-      badge: "Alto Padrão",
-      features: ["Tomadas e interruptores modernos", "Alimentação segura para aparelhos pesados", "Sem quedas de energia"]
+      id: "luminotecnica",
+      title: "Luminotécnica, Fitas LED & Lustres",
+      description: "Instalação de fitas LED, trilhos eletrificados, plafons de embutir e sobrepor, lustres decorativos e luminárias.",
+      icon: "Sparkles",
+      badge: "Design & Iluminação",
+      features: ["Fitas de LED e sancas", "Plafons de embutir e sobrepor", "Lustres de alto padrão e ventiladores"]
     },
     {
-      id: "iluminacao",
-      title: "Iluminação Técnica & Perfis de LED",
-      description: "Instalação de fitas LED, trilhos eletrificados, sancas de gesso, refletores e automação inteligente.",
-      icon: "ShoppingCart",
-      badge: "Design & Estética",
-      features: ["Iluminação suave e moderna", "Integração com interruptores smart", "Economia de energia com LED"]
+      id: "disjuntores",
+      title: "Quadros, Disjuntores & Curto-Circuito",
+      description: "Instalação e troca de disjuntores, barramentos tipo pente, resolução de curtos e eliminação de sobrecargas.",
+      icon: "Wrench",
+      badge: "Segurança Total",
+      features: ["Troca de disjuntores antigos", "Localização de curto-circuito", "Barramentos e identificação de circuitos"]
     },
     {
-      id: "manutencao",
-      title: "Correção de Curto-Circuito & Emergências",
-      description: "Localização rápida de falhas, disjuntores que desarmam sem motivo, cheiro de queimado e quedas de tensão.",
+      id: "tomadas",
+      title: "Tomadas, Interruptores & Circuitos",
+      description: "Instalação, troca e manutenção de tomadas 10A e 20A, interruptores simples, paralelos e inteligentes.",
+      icon: "Cpu",
+      badge: "Praticidade",
+      features: ["Tomadas de 20A para ar e chuveiro", "Interruptores modernos", "Revisão de fiação"]
+    },
+    {
+      id: "manutencoes",
+      title: "Manutenções Elétricas em Geral",
+      description: "Revisão geral da parte elétrica, adequação de pontos de luz, ventiladores de teto e reparos preventivos e corretivos.",
       icon: "Zap",
-      badge: "Plantão",
-      features: ["Diagnóstico preciso com multímetro", "Reparo imediato sem quebra desnecessária", "Laudo da instalação"]
+      badge: "Completo",
+      features: ["Ventiladores de teto e luminárias", "Revisão de fiação ressecada", "Atendimento em residências e empresas"]
     }
   ],
 
-  // 5. PORTFÓLIO / TRABALHOS (IMAGENS HD DE ELÉTRICA REAL)
+  // 6. PORTFÓLIO / TRABALHOS ANTERIORES
   portfolio: [
     {
       id: 1,
-      title: "Montagem e Alinhamento de Quadro Trifásico (QDC)",
-      category: "Quadros Elétricos",
-      description: "Quadro com barramento isolado, proteção total contra descargas atmosféricas e identificação circuito a circuito.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
-      tags: ["QDC", "DPS", "DR", "Pente", "NBR 5410"],
-      liveUrl: "#",
+      title: "Instalação de WallBox para Veículo Elétrico",
+      category: "WallBox",
+      description: "Ponto de recarga veicular com cabo dimensionado, disjuntor de proteção e infraestrutura em tubulação aparente.",
+      image: "https://images.unsplash.com/photo-1558441719-f0a597561841?auto=format&fit=crop&w=800&q=80",
+      tags: ["WallBox", "Carro Elétrico", "Circuito Dedicado"],
     },
     {
       id: 2,
-      title: "Passagem de Cabos e Infraestrutura Aparente",
-      category: "Infraestrutura",
-      description: "Cabeamento técnico passado em eletrodutos com acabamento industrial limpo e seguro.",
-      image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
-      tags: ["Cabeamento", "Infraestrutura", "Fiação Nova"],
-      liveUrl: "#",
+      title: "Quadro de Disjuntores e Resolução de Curto",
+      category: "Quadros & Disjuntores",
+      description: "Montagem e alinhamento de quadro de distribuição com proteção DR, eliminando desarmes frequentes.",
+      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
+      tags: ["Disjuntores", "Quadro QDC", "Segurança"],
     },
     {
       id: 3,
-      title: "Instalação Elétrica Residencial Completa",
-      category: "Residencial",
-      description: "Reforma total da elétrica de apartamento, adequando pontos de tomada e iluminação moderna.",
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
-      tags: ["Reforma Elétrica", "Tomadas", "Ar-Condicionado"],
-      liveUrl: "#",
+      title: "Projeto de Iluminação com Plafons e Fitas LED",
+      category: "Luminotécnica",
+      description: "Instalação de iluminação moderna em gesso, com plafons de embutir e iluminação linear em LED.",
+      image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
+      tags: ["Fita LED", "Plafons", "Luminárias"],
+    },
+    {
+      id: 4,
+      title: "Instalação de Câmeras CFTV e Infraestrutura",
+      category: "CFTV",
+      description: "Cabeamento e fixação de câmeras de segurança para cobertura de entrada e garagem.",
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
+      tags: ["CFTV", "Câmeras", "Segurança Residencial"],
     }
   ],
 
-  // 6. DEPOIMENTOS DE CLIENTES
+  // 7. ANTES E DEPOIS (SLIDER)
+  beforeAfter: {
+    title: "Veja a Transformação: Antes & Depois",
+    subtitle: "Arraste a linha no centro para conferir a diferença de uma instalação sem padrão e um quadro limpo e alinhado.",
+    beforeImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+    afterImage: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
+    beforeLabel: "Antes (Fiação Desorganizada)",
+    afterLabel: "Depois (Quadro Padrão Christhyan Muniz⚡)"
+  },
+
+  // 8. DEPOIMENTOS
   testimonials: [
     {
       id: 1,
-      name: "Rodrigo Almeida",
-      role: "Reforma Residencial • Rio de Janeiro",
-      comment: "O Christhyan resolveu um problema de disjuntor desarmando que três profissionais anteriores não acharam. O quadro elétrico ficou uma verdadeira obra de arte!",
+      name: "Cliente Residencial",
+      role: "Moema • São Paulo / SP",
+      comment: "O Christhyan instalou o WallBox do meu carro elétrico com um capricho fora do comum. Fiação toda protegida, pontual e explicou tudo certinho. Nota 10!",
       rating: 5,
     },
     {
       id: 2,
-      name: "Márcio Ferreira",
-      role: "Comércio • Niterói / RJ",
-      comment: "Excelente profissional. Muito pontual, limpo, explicou cada etapa do serviço e entregou no prazo prometido. Recomendo de olhos fechados!",
+      name: "Reforma de Apartamento",
+      role: "Morumbi • São Paulo / SP",
+      comment: "Trocou todos os disjuntores e instalou as fitas LED da sala. O serviço ficou perfeito, limpo e sem nenhuma dor de cabeça. Recomendo demais!",
       rating: 5,
     }
   ],
 
-  // 7. PERGUNTAS FREQUENTES (FAQ)
+  // 9. PERGUNTAS FREQUENTES (FAQ)
   faq: [
     {
-      question: "Você atende casos de emergência e curto-circuito?",
-      answer: "Sim! Casos com disjuntor desarmando, cheiro de queimado ou falta de energia parcial em cômodos são atendidos com prioridade para garantir a segurança do seu imóvel."
+      question: "Quais bairros você atende em São Paulo?",
+      answer: "Atendo principalmente a Zona Sul e Zona Norte de São Paulo, incluindo Moema, Vila Olímpia, Morumbi, Vila Mariana, Perdizes, Barra Funda, Vila Clementino, Faria Lima, Ibirapuera, Vila Sônia e região metropolitana."
     },
     {
-      question: "Como funciona a solicitação de orçamento?",
-      answer: "Basta clicar em qualquer botão do WhatsApp no site e nos mandar fotos ou um vídeo do quadro ou do que você precisa. Conseguimos passar uma prévia e agendar a visita técnica."
+      question: "Você faz instalação de carregador veicular WallBox?",
+      answer: "Sim! Fazemos a instalação completa com cabo dimensionado para a potência do seu veículo (híbrido ou 100% elétrico), disjuntor exclusivo e dispositivo de proteção DR."
     },
     {
-      question: "O serviço segue as normas brasileiras de segurança?",
-      answer: "Rigorosamente sim. Todos os dimensionamentos de cabos, disjuntores e dispositivos de segurança seguem à risca os parâmetros da norma NBR 5410 da ABNT."
+      question: "Como solicitar um orçamento com você?",
+      answer: "Basta clicar em qualquer botão do WhatsApp aqui no site ou mandar mensagem no (11) 94927-7334. Se possível, envie uma foto ou vídeo do serviço para um atendimento ainda mais rápido!"
     },
     {
-      question: "Quais regiões você atende?",
-      answer: "Atendemos o Rio de Janeiro e municípios da região metropolitana para serviços residenciais, prediais e comerciais."
+      question: "Você atende casos urgentes de curto-circuito?",
+      answer: "Sim! Se o disjuntor estiver desarmando, houver cheiro de queimado ou tomadas sem energia, entre em contato imediatamente pelo WhatsApp para atendimento prioritário."
     }
   ]
 };

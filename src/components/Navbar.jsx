@@ -20,45 +20,46 @@ export default function Navbar() {
     { name: 'Início', href: '#inicio' },
     { name: 'Sobre', href: '#sobre' },
     { name: 'Serviços', href: '#servicos' },
-    { name: 'Portfólio', href: '#portfolio' },
+    { name: 'Regiões SP', href: '#regioes' },
+    { name: 'Antes & Depois', href: '#antes-depois' },
     { name: 'Depoimentos', href: '#depoimentos' },
     { name: 'FAQ', href: '#faq' },
   ];
 
   return (
     <header className="sticky top-0 z-50 transition-all">
-      {/* Barra de Aviso no Topo (Urgência Elétrica) */}
-      <div className="bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 text-xs py-1.5 px-4 text-center font-bold tracking-wide flex items-center justify-center gap-2 shadow-sm">
+      {/* Faixa de Destaque no Topo */}
+      <div className="bg-gradient-to-r from-sky-500 via-sky-400 to-sky-500 text-slate-950 text-xs py-1.5 px-4 text-center font-bold tracking-wide flex items-center justify-center gap-2 shadow-sm">
         <Zap className="w-3.5 h-3.5 fill-slate-950 animate-bounce" />
-        <span>Atendimento rápido e plantão para emergências elétricas no Rio de Janeiro</span>
+        <span>Christhyan Muniz ⚡ O Eletricista Autônomo • Atendendo Moema, Morumbi, Faria Lima e Grande SP</span>
       </div>
 
-      {/* Navegação Principal */}
+      {/* Navegação */}
       <div className="backdrop-blur-xl bg-slate-950/85 border-b border-slate-800/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           
-          {/* Logo / Nome do Profissional */}
+          {/* Logo Oficial */}
           <a href="#inicio" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-yellow-400 flex items-center justify-center font-black text-slate-950 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-400 to-white flex items-center justify-center font-black text-slate-950 shadow-lg shadow-sky-400/20 group-hover:scale-105 transition-transform">
               ⚡
             </div>
             <div>
-              <span className="font-bold text-lg tracking-tight text-white group-hover:text-amber-400 transition-colors">
-                {info.name}
+              <span className="font-extrabold text-lg tracking-tight text-white group-hover:text-sky-300 transition-colors">
+                Christhyan Muniz ⚡
               </span>
-              <span className="block text-xs text-amber-400/90 font-medium">
-                Eletricista Oficial
+              <span className="block text-xs text-sky-300 font-semibold">
+                O Eletricista Autônomo
               </span>
             </div>
           </a>
 
           {/* Links Desktop */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-slate-300 hover:text-amber-400 transition-colors"
+                className="text-xs font-semibold text-slate-300 hover:text-sky-300 transition-colors uppercase tracking-wider"
               >
                 {link.name}
               </a>
@@ -66,14 +67,14 @@ export default function Navbar() {
           </nav>
 
           {/* Botões Desktop */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden sm:flex items-center gap-3">
             {contact.instagram && (
               <a
                 href={contact.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 hover:text-amber-400 hover:border-amber-500/40 transition-colors"
-                title="Ver Instagram"
+                className="p-2.5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 hover:text-sky-300 hover:border-sky-400/40 transition-colors"
+                title="Instagram Oficial"
               >
                 <InstagramIcon className="w-4 h-4" />
               </a>
@@ -83,32 +84,32 @@ export default function Navbar() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm shadow-md shadow-amber-500/25 hover:shadow-amber-400/40 transition-all transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-sky-400 hover:bg-sky-300 text-slate-950 font-extrabold text-xs tracking-wider uppercase shadow-md shadow-sky-400/25 hover:shadow-sky-300/40 transition-all transform hover:-translate-y-0.5"
             >
               <MessageSquare className="w-4 h-4 fill-slate-950" />
-              <span>Chamar no WhatsApp</span>
+              <span>(11) 94927-7334</span>
             </a>
           </div>
 
-          {/* Botão Hambúrguer Mobile */}
+          {/* Menu Mobile */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 focus:outline-none"
+            className="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 focus:outline-none"
             aria-label="Abrir menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
-        {/* Menu Mobile */}
+        {/* Menu Drawer Mobile */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-b border-slate-800 bg-slate-900/95 backdrop-blur-xl px-4 pt-3 pb-6 space-y-3">
+          <div className="lg:hidden border-b border-slate-800 bg-slate-900/95 backdrop-blur-xl px-4 pt-3 pb-6 space-y-3">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block px-3 py-2 text-base font-medium text-slate-200 hover:bg-slate-800/80 rounded-lg hover:text-amber-400"
+                className="block px-3 py-2 text-base font-semibold text-slate-200 hover:bg-slate-800/80 rounded-lg hover:text-sky-300"
               >
                 {link.name}
               </a>
@@ -118,10 +119,10 @@ export default function Navbar() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm"
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-sky-400 hover:bg-sky-300 text-slate-950 font-bold text-sm"
               >
                 <MessageSquare className="w-4 h-4 fill-slate-950" />
-                <span>Falar no WhatsApp</span>
+                <span>Chamar no WhatsApp (11) 94927-7334</span>
               </a>
             </div>
           </div>
