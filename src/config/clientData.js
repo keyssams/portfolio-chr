@@ -154,17 +154,53 @@ export const clientData = {
       description: "Análise da infraestrutura elétrica do ambiente, identificação de falhas e pontos de atenção, e orientações técnicas para os próximos passos.",
       image: "/visita-tecnica.jpg",
       tags: ["Visita Técnica", "Avaliação", "Segurança", "Diagnóstico"],
+    },
+    {
+      id: 5,
+      title: "Instalação de Eletrofita sem Quebra de Parede",
+      category: "Antes & Depois",
+      description: "Antes & Depois real: novo ponto de tomada utilizando eletrofita, preservando a alvenaria e acabamento com perfeição. Cliente 100% satisfeito.",
+      image: "/antes-depois-eletrofita.jpg",
+      tags: ["Eletrofita", "Antes & Depois", "Sem Quebra-Quebra", "Tomadas"],
+    },
+    {
+      id: 6,
+      title: "Instalação & Prolongação de Tomada com Canaleta",
+      category: "Antes & Depois",
+      description: "Antes & Depois real: canaleta de sobrepor alinhada, passagem de fiação com conectores de torção e instalação de tomada de sobrepor com total segurança.",
+      image: "/antes-depois-tomada.jpg",
+      tags: ["Canaleta", "Tomada Sobrepor", "Antes & Depois", "Manutenção"],
     }
   ],
 
   // 7. ANTES E DEPOIS REALISTA
   beforeAfter: {
     title: "Veja a Transformação: Antes & Depois",
-    subtitle: "Arraste a linha no centro para conferir a restauração e organização de um quadro elétrico antes da intervenção e após o trabalho concluído.",
+    subtitle: "Arraste a linha no centro do quadro ou confira abaixo os serviços de eletrofita e tomadas concluídos com padrão de excelência.",
     beforeImage: "/quadro-antes.jpg",
     afterImage: "/quadro-depois.jpg",
     beforeLabel: "Antes (Quadro com Poeira e Sobrecarga)",
-    afterLabel: "Depois (Padrão Christhyan Muniz⚡)"
+    afterLabel: "Depois (Padrão Christhyan Muniz⚡)",
+    cases: [
+      {
+        id: "eletrofita",
+        title: "Instalação de Eletrofita ⚡",
+        badge: "Sem Quebra-Quebra",
+        tag: "Antes & Depois • Cliente Satisfeito",
+        description: "Novo ponto elétrico sem precisar cortar a parede. A eletrofita fica invisível sob a pintura ou acabamento, garantindo uma tomada perfeita sem poeira ou transtorno.",
+        image: "/antes-depois-eletrofita.jpg",
+        whatsappMessage: "Olá Christhyan! Vi o antes e depois da Instalação de Eletrofita no seu site e gostaria de solicitar um orçamento para minha residência."
+      },
+      {
+        id: "tomada-canaleta",
+        title: "Instalação & Prolongação de Tomada",
+        badge: "Fiação Antichama & Canaleta",
+        tag: "Antes & Depois • Obra Limpa",
+        description: "Prolongação de tomada usando canaleta rígida e caixa de sobrepor de alta qualidade. Organização dos fios, emenda protegida com conectores e isolamento seguro.",
+        image: "/antes-depois-tomada.jpg",
+        whatsappMessage: "Olá Christhyan! Vi o antes e depois da Prolongação de Tomada com canaleta no seu site e gostaria de agendar uma instalação."
+      }
+    ]
   },
 
   // 8. DEPOIMENTOS
