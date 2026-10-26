@@ -17,9 +17,9 @@ export default function Hero() {
   const glowY       = useTransform(scrollY, [0, 450], [0, 160]);
 
   return (
-    <section ref={heroRef} id="inicio" className="relative pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden">
+    <section ref={heroRef} id="inicio" className="relative pt-8 pb-20 md:pt-14 md:pb-28 overflow-hidden">
       
-      {/* Luz ambiente azul bebê suave de fundo */}
+      {/* Luz ambiente azul bebê */}
       <motion.div 
         style={{ y: glowY }}
         className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[380px] bg-sky-400/15 blur-[140px] rounded-full pointer-events-none -z-10" 
@@ -29,13 +29,30 @@ export default function Hero() {
         style={{ opacity: heroOpacity, scale: heroScale, y: heroY }}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        <div className="max-w-3xl mx-auto text-center space-y-7">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
           
+          {/* Foto Real de Perfil com Aro Neon */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center"
+          >
+            <div className="relative group">
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-sky-400 via-white to-sky-400 blur-md opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
+              <img
+                src={info.avatarUrl}
+                alt={info.name}
+                className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover border-2 border-white shadow-2xl"
+              />
+            </div>
+          </motion.div>
+
           {/* Badge Oficial com o Slogan */}
           <motion.div 
             initial={{ opacity: 0, y: -15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-sky-400/40 text-xs font-bold text-sky-200 shadow-inner"
           >
             <Zap className="w-3.5 h-3.5 fill-sky-300 text-sky-300 animate-pulse" />
@@ -46,7 +63,7 @@ export default function Hero() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]"
           >
             Instalações elétricas seguras,{' '}

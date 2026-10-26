@@ -41,7 +41,7 @@ export default function About() {
         {/* Conteúdo Principal */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Card com Foto / Apresentação */}
+          {/* Card com Foto Real do Christhyan no Painel */}
           <motion.div 
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -51,18 +51,18 @@ export default function About() {
           >
             <div className="relative w-full max-w-sm">
               <div className="absolute -inset-1.5 bg-gradient-to-tr from-sky-400 to-white rounded-3xl blur-lg opacity-25"></div>
-              <div className="relative rounded-2xl bg-slate-900 border border-slate-800 p-6 shadow-2xl">
+              <div className="relative rounded-2xl bg-slate-900 border border-slate-800 p-4 shadow-2xl overflow-hidden">
                 <img
-                  src={info.avatarUrl}
+                  src={info.heroFullUrl}
                   alt={info.name}
-                  className="w-full h-80 object-cover rounded-xl shadow-md border border-slate-700"
+                  className="w-full h-96 object-cover rounded-xl shadow-md border border-slate-700"
                 />
-                <div className="mt-5 text-center">
+                <div className="mt-4 text-center">
                   <h3 className="text-xl font-extrabold text-white">{info.name}</h3>
-                  <p className="text-sm text-sky-300 font-semibold mt-1">O Eletricista Autônomo</p>
+                  <p className="text-sm text-sky-300 font-semibold mt-0.5">O Eletricista Autônomo</p>
                 </div>
 
-                <div className="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs text-slate-300">
+                <div className="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-300">
                   <span className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                     Atendimento em SP

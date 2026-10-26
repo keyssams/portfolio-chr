@@ -1,6 +1,6 @@
 /**
  * ==============================================================================
- * CONFIGURAÇÃO OFICIAL DEFINITIVA: Christhyan Muniz ⚡
+ * CONFIGURAÇÃO OFICIAL DEFINITIVA COM FOTOS REAIS: Christhyan Muniz ⚡
  * "O Eletricista Autônomo"
  * WhatsApp: (11) 94927-7334 | Instagram: @christhyanmunizz
  * ==============================================================================
@@ -15,7 +15,8 @@ export const clientData = {
     headline: "Instalações elétricas modernas, WallBox para veículos elétricos e CFTV com atendimento direto.",
     bioShort: "Eletricista autônomo com foco em qualidade técnica, segurança e acabamento impecável. Atendimento exclusivo nas principais regiões de São Paulo.",
     location: "Zona Sul, Zona Norte e Grande São Paulo",
-    avatarUrl: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80",
+    avatarUrl: "/chris-avatar.jpg", // Foto real oficial com aro neon azul
+    heroFullUrl: "/chris-hero.jpg",  // Foto real oficial no painel com cinto de ferramentas
     
     // Métricas
     stats: [
@@ -36,7 +37,7 @@ export const clientData = {
     instagramHandle: "@christhyanmunizz",
   },
 
-  // 3. REGIÕES DE ATENDIMENTO (EM DESTAQUE)
+  // 3. REGIÕES DE ATENDIMENTO
   regions: [
     "Moema",
     "Vila Olímpia",
@@ -68,7 +69,7 @@ export const clientData = {
     ]
   },
 
-  // 5. SERVIÇOS OFERECIDOS (LISTA COMPLETA OFICIAL)
+  // 5. SERVIÇOS OFERECIDOS
   services: [
     {
       id: "wallbox",
@@ -120,50 +121,50 @@ export const clientData = {
     }
   ],
 
-  // 6. PORTFÓLIO / TRABALHOS ANTERIORES
+  // 6. PORTFÓLIO / FOTOS REAIS DO CLIENTE
   portfolio: [
     {
       id: 1,
-      title: "Instalação de WallBox para Veículo Elétrico",
-      category: "WallBox",
-      description: "Ponto de recarga veicular com cabo dimensionado, disjuntor de proteção e infraestrutura em tubulação aparente.",
-      image: "https://images.unsplash.com/photo-1558441719-f0a597561841?auto=format&fit=crop&w=800&q=80",
-      tags: ["WallBox", "Carro Elétrico", "Circuito Dedicado"],
+      title: "Obras Reais: WallBox, CFTV, LED & Ventiladores",
+      category: "Obras Concluídas",
+      description: "Casos reais de instalações executadas pelo Christhyan: WallBox veicular, câmeras CFTV, fitas LED em sanca, troca de disjuntores e ventilador de teto.",
+      image: "/mosaico-obras.jpg",
+      tags: ["WallBox", "CFTV", "Fita LED", "Disjuntores", "Ventiladores"],
     },
     {
       id: 2,
-      title: "Quadro de Disjuntores e Resolução de Curto",
-      category: "Quadros & Disjuntores",
-      description: "Montagem e alinhamento de quadro de distribuição com proteção DR, eliminando desarmes frequentes.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
-      tags: ["Disjuntores", "Quadro QDC", "Segurança"],
+      title: "Serviços Oficiais: Segurança, Qualidade e Confiança",
+      category: "Serviços Oficiais",
+      description: "Instalações profissionais de tomadas, chuveiros com segurança, iluminação em LED e troca de disjuntores com acabamento de alto padrão.",
+      image: "/banner-servicos.jpg",
+      tags: ["Tomadas", "Chuveiros", "Luminárias", "Disjuntores"],
     },
     {
       id: 3,
-      title: "Projeto de Iluminação com Plafons e Fitas LED",
-      category: "Luminotécnica",
-      description: "Instalação de iluminação moderna em gesso, com plafons de embutir e iluminação linear em LED.",
-      image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
-      tags: ["Fita LED", "Plafons", "Luminárias"],
+      title: "Visita Técnica & Avaliação de Infraestrutura Elétrica",
+      category: "Diagnóstico & Visita",
+      description: "Análise da infraestrutura elétrica do ambiente, identificação de falhas e pontos de atenção, e orientações técnicas para os próximos passos.",
+      image: "/visita-tecnica.jpg",
+      tags: ["Visita Técnica", "Avaliação", "Segurança", "Diagnóstico"],
     },
     {
       id: 4,
-      title: "Instalação de Câmeras CFTV e Infraestrutura",
-      category: "CFTV",
-      description: "Cabeamento e fixação de câmeras de segurança para cobertura de entrada e garagem.",
-      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
-      tags: ["CFTV", "Câmeras", "Segurança Residencial"],
+      title: "Quadro Geral de Distribuição e Infraestrutura",
+      category: "Quadros QDC",
+      description: "Christhyan Muniz em frente a painel elétrico de grande porte, demonstrando domínio técnico, organização de barramentos e cabos antichama.",
+      image: "/chris-hero.jpg",
+      tags: ["Painel Elétrico", "Barramentos", "NBR 5410", "Christhyan Muniz ⚡"],
     }
   ],
 
   // 7. ANTES E DEPOIS (SLIDER)
   beforeAfter: {
     title: "Veja a Transformação: Antes & Depois",
-    subtitle: "Arraste a linha no centro para conferir a diferença de uma instalação sem padrão e um quadro limpo e alinhado.",
+    subtitle: "Arraste a linha no centro para conferir a diferença de uma instalação sem padrão e um quadro limpo e alinhado pelo Christhyan Muniz.",
     beforeImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
-    afterImage: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
-    beforeLabel: "Antes (Fiação Desorganizada)",
-    afterLabel: "Depois (Quadro Padrão Christhyan Muniz⚡)"
+    afterImage: "/chris-hero.jpg",
+    beforeLabel: "Antes (Fiação Sem Padrão)",
+    afterLabel: "Depois (Padrão Christhyan Muniz⚡)"
   },
 
   // 8. DEPOIMENTOS
@@ -195,7 +196,7 @@ export const clientData = {
       answer: "Sim! Fazemos a instalação completa com cabo dimensionado para a potência do seu veículo (híbrido ou 100% elétrico), disjuntor exclusivo e dispositivo de proteção DR."
     },
     {
-      question: "Como solicitar um orçamento com você?",
+      question: "Como solicitar uma visita técnica ou orçamento?",
       answer: "Basta clicar em qualquer botão do WhatsApp aqui no site ou mandar mensagem no (11) 94927-7334. Se possível, envie uma foto ou vídeo do serviço para um atendimento ainda mais rápido!"
     },
     {
