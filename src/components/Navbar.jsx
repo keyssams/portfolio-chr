@@ -29,9 +29,9 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 transition-all">
       {/* Faixa de Destaque no Topo em Azul Bebê */}
-      <div className="bg-gradient-to-r from-sky-400 via-sky-300 to-sky-400 text-slate-950 text-xs py-1.5 px-4 text-center font-bold tracking-wide flex items-center justify-center gap-2 shadow-sm">
+      <div className="bg-gradient-to-r from-sky-400 via-sky-300 to-sky-400 text-slate-950 text-xs py-1.5 px-4 text-center font-black tracking-wide flex items-center justify-center gap-2 shadow-sm">
         <Zap className="w-3.5 h-3.5 fill-slate-950 animate-bounce" />
-        <span>Christhyan Muniz ⚡ O Eletricista Autônomo • Atendendo Moema, Morumbi, Faria Lima e Grande SP</span>
+        <span>Christhyan Muniz ⚡ O Eletricista Autônomo</span>
       </div>
 
       {/* Navegação Fundo Branco */}

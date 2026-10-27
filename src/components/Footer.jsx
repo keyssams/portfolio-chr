@@ -19,7 +19,7 @@ export default function Footer() {
             <span className="font-extrabold text-sm text-slate-900">Christhyan Muniz ⚡</span>
             <span className="text-sky-600 font-bold">• O Eletricista Autônomo</span>
           </div>
-          <p>© {currentYear} Todos os direitos reservados. Atendimento na Zona Sul e Grande São Paulo.</p>
+          <p>© {currentYear} Christhyan Muniz ⚡ O Eletricista Autônomo. Todos os direitos reservados.</p>
           <p className="mt-1 text-slate-400">CFTV || WallBox || Instalações || Manutenções</p>
         </div>
 
