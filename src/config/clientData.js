@@ -14,7 +14,7 @@ export const clientData = {
     slogan: "Christhyan Muniz ⚡ O Eletricista Autônomo",
     headline: "Instalações elétricas modernas, WallBox para veículos elétricos e CFTV com atendimento direto.",
     bioShort: "Eletricista autônomo com foco em qualidade técnica, segurança e acabamento impecável. Atendimento exclusivo nas principais regiões de São Paulo.",
-    location: "Zona Sul, Zona Norte e Grande São Paulo",
+    location: "Zona Sul e Grande São Paulo",
     avatarUrl: "/chris-avatar.jpg",
     heroFullUrl: "/chris-hero.jpg",
     
@@ -49,8 +49,7 @@ export const clientData = {
     "Faria Lima",
     "Ibirapuera",
     "Vila Sônia",
-    "Zona Sul de SP",
-    "Zona Norte de SP"
+    "Zona Sul de SP"
   ],
 
   // 4. QUEM SOU EU
@@ -225,7 +224,7 @@ export const clientData = {
   faq: [
     {
       question: "Quais bairros você atende em São Paulo?",
-      answer: "Atendo principalmente a Zona Sul e Zona Norte de São Paulo, incluindo Moema, Vila Olímpia, Morumbi, Vila Mariana, Perdizes, Barra Funda, Vila Clementino, Faria Lima, Ibirapuera, Vila Sônia e região metropolitana."
+      answer: "Atendo principalmente a Zona Sul e Grande São Paulo, incluindo Moema, Vila Olímpia, Morumbi, Vila Mariana, Perdizes, Barra Funda, Vila Clementino, Faria Lima, Ibirapuera, Vila Sônia e região metropolitana."
     },
     {
       question: "Você faz instalação de carregador veicular WallBox?",
